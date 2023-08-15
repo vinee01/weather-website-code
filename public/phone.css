@@ -1,0 +1,64 @@
+@media (max-width: 1200px) {
+
+    .main-div {
+        padding: 5% 7%;
+    }
+
+    .feels-like, .humidity, .visiblity, .windspeed {
+        padding: 1rem;
+        margin-left: auto;
+    }
+
+    .text-hide {
+        display: none;
+    }
+
+    .sunrise-sunset-text {
+    font-size: 1.25rem;
+    }
+
+    .sunrise-icon, .sunset-icon {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+
+    .search-box {
+        width: 150px;
+    }
+
+    .location {
+        gap: 1rem;
+    }
+
+    .button {
+        padding: 5px;
+        height: 35px;
+        width: 35px;
+    }
+
+    .hour{
+        /* margin: 0; */
+        padding: 10px;
+    }
+
+    .feels-like, .humidity, .visiblity, .windspeed {
+        margin-left: auto;
+    }
+
+    .sunrise-sunset, .min-max-temp {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 1rem;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .current-weather-div {
+        padding: 1rem;
+    }
+}

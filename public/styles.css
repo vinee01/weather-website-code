@@ -1,0 +1,196 @@
+:root {
+    --primary-color: #222831;
+    --secondary-color: #393E46;
+    --tertiary-color: #2f333a;
+}
+
+body {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-div {
+    padding: 3% 10%;
+}
+
+.light-text {
+    font-weight: 200;
+}
+
+img {
+    height: 3.438rem;
+    width: 3.438rem;
+}
+
+.button {
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+.button:hover {
+    background-color: #434a53;
+}
+
+/* Inputs */ 
+
+.search-button {
+    margin-left: 5px;
+}
+
+.search-box {
+    border: none;
+    /* border-bottom: 2px solid white; */
+    max-height: 40px;
+    padding-left: 10px;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Time and date */
+
+.timeAndDate-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.local-time-text {
+    font-size: 0.8rem;
+}
+
+/* current weather div */
+
+.current-weather-container {
+    margin-top: 1.25rem;
+    gap: 1rem;
+}
+
+.current-weather-div {
+    padding: 2rem;
+    border-radius: 0.625rem;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+  
+
+.current-weather-div img {
+    width: 9.375rem;
+    height: 9.375rem;
+}
+
+.air-quality-div {
+    gap: 1.3rem;
+}
+
+.temperature-head {
+    font-size: 5rem;
+}
+
+/* now */ 
+
+.now-div {
+    margin-top: 1rem;
+    padding: 10px 10px 0 10px;
+    border-radius: 10px 10px 0 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.feels-like, .humidity, .visiblity, .windspeed {
+    border-radius: 0.625rem;
+    padding: 1.25rem;
+    margin: 0.625rem;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* second now */
+
+.second-now-div {
+    padding: 0 10px 10px 10px;
+    border-radius: 0 0 10px 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.sunrise-sunset, .min-max-temp {
+    border-radius: 0.625rem;
+    margin: 0.625rem;
+    padding: 1.25rem;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sunrise, .sunset {
+    gap: 0.625rem;
+}
+
+.max-temp, .min-temp {
+    gap: 0.625rem;
+}
+
+/* hourly forecast */
+
+.forecast-div {
+    margin-top: 1.25rem;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hour {
+    text-align: center;
+    width: 100%;
+    /* padding: 0.625rem; */
+    border-radius: 0.625rem;
+    margin: 0.625rem;
+    padding: 1.25rem;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* weekly forecast */
+
+/* footer */
+.footer {
+    padding-top: 30px;
+}
+
+/* loading screen */
+.loading-div {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: black;
+}
+
+.ring {
+    height: 10rem;
+    width: 10rem;
+    position: relative;
+}
+
+.rot {
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    border-right: 2px solid white;
+    border-radius: 50%;
+    animation: ring 2s linear infinite;
+}
+
+@keyframes ring {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.loading-text {
+    font-size: 1.2rem;
+}
